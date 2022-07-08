@@ -1,0 +1,574 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>MainWindow</class>
+ <widget class="QMainWindow" name="MainWindow">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>1130</width>
+    <height>848</height>
+   </rect>
+  </property>
+  <property name="windowTitle">
+   <string>NanoThermo</string>
+  </property>
+  <property name="windowIcon">
+   <iconset>
+    <normaloff>../fluo36/icone.PNG</normaloff>../fluo36/icone.PNG</iconset>
+  </property>
+  <widget class="QWidget" name="centralwidget">
+   <layout class="QGridLayout" name="gridLayout_3">
+    <item row="0" column="0" rowspan="2" colspan="3">
+     <layout class="QGridLayout" name="gridLayout_2">
+      <item row="4" column="1">
+       <widget class="MplWidget" name="MplWidget" native="true">
+        <property name="sizePolicy">
+         <sizepolicy hsizetype="Expanding" vsizetype="Expanding">
+          <horstretch>0</horstretch>
+          <verstretch>0</verstretch>
+         </sizepolicy>
+        </property>
+        <property name="minimumSize">
+         <size>
+          <width>300</width>
+          <height>300</height>
+         </size>
+        </property>
+       </widget>
+      </item>
+      <item row="5" column="1">
+       <layout class="QGridLayout" name="gridLayout">
+        <item row="2" column="10">
+         <widget class="QLabel" name="label_I1">
+          <property name="text">
+           <string>TextLabel</string>
+          </property>
+         </widget>
+        </item>
+        <item row="4" column="10">
+         <widget class="QLabel" name="label_I2">
+          <property name="text">
+           <string>TextLabel</string>
+          </property>
+         </widget>
+        </item>
+        <item row="5" column="10">
+         <widget class="QLabel" name="label__Ipic">
+          <property name="text">
+           <string>TextLabel</string>
+          </property>
+         </widget>
+        </item>
+        <item row="2" column="1">
+         <widget class="QLabel" name="label_9">
+          <property name="text">
+           <string>Scans to Plot</string>
+          </property>
+         </widget>
+        </item>
+        <item row="4" column="9">
+         <widget class="QLabel" name="label_5">
+          <property name="text">
+           <string>I2 = </string>
+          </property>
+          <property name="alignment">
+           <set>Qt::AlignRight|Qt::AlignTrailing|Qt::AlignVCenter</set>
+          </property>
+         </widget>
+        </item>
+        <item row="2" column="7">
+         <widget class="QLabel" name="label">
+          <property name="text">
+           <string>Lamba 1 = </string>
+          </property>
+          <property name="alignment">
+           <set>Qt::AlignRight|Qt::AlignTrailing|Qt::AlignVCenter</set>
+          </property>
+         </widget>
+        </item>
+        <item row="4" column="7">
+         <widget class="QLabel" name="label_2">
+          <property name="text">
+           <string>Lamba 2 = </string>
+          </property>
+          <property name="alignment">
+           <set>Qt::AlignRight|Qt::AlignTrailing|Qt::AlignVCenter</set>
+          </property>
+         </widget>
+        </item>
+        <item row="2" column="0">
+         <widget class="QLabel" name="label_Scans">
+          <property name="text">
+           <string/>
+          </property>
+          <property name="alignment">
+           <set>Qt::AlignRight|Qt::AlignTrailing|Qt::AlignVCenter</set>
+          </property>
+         </widget>
+        </item>
+        <item row="4" column="8">
+         <widget class="QDoubleSpinBox" name="doubleSpinBox_Lamba2">
+          <property name="decimals">
+           <number>1</number>
+          </property>
+          <property name="maximum">
+           <double>9999.000000000000000</double>
+          </property>
+          <property name="singleStep">
+           <double>0.500000000000000</double>
+          </property>
+          <property name="value">
+           <double>650.000000000000000</double>
+          </property>
+         </widget>
+        </item>
+        <item row="2" column="9">
+         <widget class="QLabel" name="label_4">
+          <property name="text">
+           <string>I1 = </string>
+          </property>
+          <property name="alignment">
+           <set>Qt::AlignRight|Qt::AlignTrailing|Qt::AlignVCenter</set>
+          </property>
+         </widget>
+        </item>
+        <item row="6" column="0">
+         <widget class="QLabel" name="label_3">
+          <property name="text">
+           <string>Scan#: </string>
+          </property>
+          <property name="alignment">
+           <set>Qt::AlignRight|Qt::AlignTrailing|Qt::AlignVCenter</set>
+          </property>
+         </widget>
+        </item>
+        <item row="6" column="1">
+         <widget class="QSpinBox" name="spinBox_numero">
+          <property name="maximum">
+           <number>9999</number>
+          </property>
+         </widget>
+        </item>
+        <item row="2" column="8">
+         <widget class="QDoubleSpinBox" name="doubleSpinBox_Lamba1">
+          <property name="decimals">
+           <number>1</number>
+          </property>
+          <property name="maximum">
+           <double>9999.000000000000000</double>
+          </property>
+          <property name="singleStep">
+           <double>0.500000000000000</double>
+          </property>
+          <property name="value">
+           <double>600.000000000000000</double>
+          </property>
+         </widget>
+        </item>
+        <item row="5" column="9">
+         <widget class="QLabel" name="label_6">
+          <property name="text">
+           <string>I Pic = </string>
+          </property>
+          <property name="alignment">
+           <set>Qt::AlignRight|Qt::AlignTrailing|Qt::AlignVCenter</set>
+          </property>
+         </widget>
+        </item>
+        <item row="6" column="9">
+         <widget class="QLabel" name="label_7">
+          <property name="text">
+           <string>Lamba Pic = </string>
+          </property>
+          <property name="alignment">
+           <set>Qt::AlignRight|Qt::AlignTrailing|Qt::AlignVCenter</set>
+          </property>
+         </widget>
+        </item>
+        <item row="6" column="10">
+         <widget class="QLabel" name="label_Lamba_pic">
+          <property name="text">
+           <string>TextLabel</string>
+          </property>
+         </widget>
+        </item>
+        <item row="4" column="2">
+         <widget class="QRadioButton" name="radioButton_methodeRatio">
+          <property name="text">
+           <string>Intensity Ratio Method</string>
+          </property>
+         </widget>
+        </item>
+        <item row="4" column="3">
+         <widget class="QRadioButton" name="radioButton_MethodeMax">
+          <property name="text">
+           <string>Simple Max Method</string>
+          </property>
+         </widget>
+        </item>
+        <item row="4" column="4">
+         <widget class="QRadioButton" name="radioButton_MethodeDeriv">
+          <property name="text">
+           <string>Max By Deriv. Method</string>
+          </property>
+         </widget>
+        </item>
+        <item row="4" column="5">
+         <widget class="QRadioButton" name="radioButton_MethodeAire">
+          <property name="text">
+           <string>Surface Ratio Mode</string>
+          </property>
+         </widget>
+        </item>
+        <item row="3" column="2">
+         <widget class="Line" name="line">
+          <property name="orientation">
+           <enum>Qt::Horizontal</enum>
+          </property>
+         </widget>
+        </item>
+        <item row="3" column="3">
+         <widget class="Line" name="line_8">
+          <property name="orientation">
+           <enum>Qt::Horizontal</enum>
+          </property>
+         </widget>
+        </item>
+        <item row="3" column="4">
+         <widget class="Line" name="line_9">
+          <property name="orientation">
+           <enum>Qt::Horizontal</enum>
+          </property>
+         </widget>
+        </item>
+        <item row="2" column="2">
+         <widget class="QRadioButton" name="radioButton_plot_mesure">
+          <property name="text">
+           <string>Plot Measure Interpolation</string>
+          </property>
+         </widget>
+        </item>
+        <item row="2" column="4">
+         <widget class="QRadioButton" name="radioButton_check_neo">
+          <property name="text">
+           <string>Check with Neoptix</string>
+          </property>
+         </widget>
+        </item>
+        <item row="2" column="3">
+         <widget class="QRadioButton" name="radioButton_plot_mes">
+          <property name="text">
+           <string>Plot Measure Result</string>
+          </property>
+         </widget>
+        </item>
+       </layout>
+      </item>
+      <item row="0" column="1">
+       <layout class="QGridLayout" name="gridLayout_4">
+        <item row="3" column="0">
+         <widget class="QRadioButton" name="radioButton_Full_Plot">
+          <property name="text">
+           <string>Full Plot</string>
+          </property>
+         </widget>
+        </item>
+        <item row="3" column="5">
+         <widget class="QRadioButton" name="radioButton_ratio_surf">
+          <property name="text">
+           <string>Plot Area Ratios</string>
+          </property>
+         </widget>
+        </item>
+        <item row="4" column="5">
+         <widget class="QRadioButton" name="radioButton_maximasDeriv_nulle">
+          <property name="text">
+           <string>Pot Maxima deriv=0</string>
+          </property>
+         </widget>
+        </item>
+        <item row="3" column="4">
+         <widget class="QRadioButton" name="radioButton_Maximas">
+          <property name="text">
+           <string>Plot Maxima</string>
+          </property>
+         </widget>
+        </item>
+        <item row="3" column="2">
+         <widget class="QRadioButton" name="radioButton_plot_calib">
+          <property name="text">
+           <string>Plot Calibration Interpolation</string>
+          </property>
+         </widget>
+        </item>
+        <item row="4" column="4">
+         <widget class="QRadioButton" name="radioButton_Ratios">
+          <property name="text">
+           <string>Plot Intensity Ratios</string>
+          </property>
+         </widget>
+        </item>
+        <item row="4" column="1">
+         <widget class="Line" name="line_7">
+          <property name="orientation">
+           <enum>Qt::Vertical</enum>
+          </property>
+         </widget>
+        </item>
+        <item row="4" column="3">
+         <widget class="Line" name="line_11">
+          <property name="orientation">
+           <enum>Qt::Vertical</enum>
+          </property>
+         </widget>
+        </item>
+        <item row="3" column="3">
+         <widget class="Line" name="line_10">
+          <property name="orientation">
+           <enum>Qt::Vertical</enum>
+          </property>
+         </widget>
+        </item>
+        <item row="2" column="2">
+         <widget class="Line" name="line_3">
+          <property name="orientation">
+           <enum>Qt::Horizontal</enum>
+          </property>
+         </widget>
+        </item>
+        <item row="2" column="4">
+         <widget class="Line" name="line_4">
+          <property name="orientation">
+           <enum>Qt::Horizontal</enum>
+          </property>
+         </widget>
+        </item>
+        <item row="4" column="0">
+         <widget class="QRadioButton" name="radioButton_Simple_Plot">
+          <property name="text">
+           <string>Simple Plot</string>
+          </property>
+         </widget>
+        </item>
+        <item row="2" column="0">
+         <widget class="Line" name="line_2">
+          <property name="orientation">
+           <enum>Qt::Horizontal</enum>
+          </property>
+         </widget>
+        </item>
+        <item row="2" column="5">
+         <widget class="Line" name="line_5">
+          <property name="orientation">
+           <enum>Qt::Horizontal</enum>
+          </property>
+         </widget>
+        </item>
+        <item row="3" column="1">
+         <widget class="Line" name="line_6">
+          <property name="orientation">
+           <enum>Qt::Vertical</enum>
+          </property>
+         </widget>
+        </item>
+        <item row="0" column="0">
+         <widget class="QRadioButton" name="radioButton_calib_mode">
+          <property name="text">
+           <string>Calibration Mode</string>
+          </property>
+         </widget>
+        </item>
+        <item row="0" column="2">
+         <widget class="QRadioButton" name="radioButton_mes_mode">
+          <property name="text">
+           <string>Measure Mode</string>
+          </property>
+         </widget>
+        </item>
+       </layout>
+      </item>
+     </layout>
+    </item>
+    <item row="2" column="2">
+     <widget class="QPushButton" name="pushButton_quit">
+      <property name="text">
+       <string>Quit</string>
+      </property>
+     </widget>
+    </item>
+    <item row="2" column="1">
+     <widget class="QPushButton" name="pushButton">
+      <property name="text">
+       <string>PushButton</string>
+      </property>
+     </widget>
+    </item>
+   </layout>
+  </widget>
+  <widget class="QMenuBar" name="menubar">
+   <property name="geometry">
+    <rect>
+     <x>0</x>
+     <y>0</y>
+     <width>1130</width>
+     <height>21</height>
+    </rect>
+   </property>
+   <widget class="QMenu" name="menuFile">
+    <property name="title">
+     <string>File</string>
+    </property>
+    <addaction name="actionOpen"/>
+    <addaction name="actionOpen_Calibration"/>
+    <addaction name="actionSave_Calibration"/>
+    <addaction name="separator"/>
+    <addaction name="actionSelect_Calibration_File"/>
+    <addaction name="actionCalibration_Preview"/>
+    <addaction name="actionOpen_Data_Measure"/>
+    <addaction name="actionSave_dat"/>
+    <addaction name="separator"/>
+    <addaction name="actionQuit"/>
+   </widget>
+   <widget class="QMenu" name="menuGraph">
+    <property name="title">
+     <string>Graph</string>
+    </property>
+    <addaction name="action_full_plot"/>
+    <addaction name="action_simple_Plot"/>
+    <addaction name="action_ratios_plots"/>
+    <addaction name="action_maxima_plots"/>
+    <addaction name="actionCalibration_Interpolation_Plot"/>
+    <addaction name="actionMeasure_Interpolation_Plot"/>
+    <addaction name="actionMeasurement_results_Plots"/>
+    <addaction name="actionCheck_Neoptix_Plot"/>
+   </widget>
+   <widget class="QMenu" name="menuHelp">
+    <property name="title">
+     <string>Help</string>
+    </property>
+    <addaction name="actionHelp"/>
+    <addaction name="actionAbout"/>
+   </widget>
+   <addaction name="menuFile"/>
+   <addaction name="menuGraph"/>
+   <addaction name="menuHelp"/>
+  </widget>
+  <widget class="QStatusBar" name="statusbar"/>
+  <action name="actionOpen">
+   <property name="text">
+    <string>Open spectra for Calibration</string>
+   </property>
+  </action>
+  <action name="actionQuit">
+   <property name="text">
+    <string>Quit</string>
+   </property>
+  </action>
+  <action name="action_full_plot">
+   <property name="text">
+    <string>Full Plot</string>
+   </property>
+  </action>
+  <action name="actionSave_Ratios">
+   <property name="text">
+    <string>Save Ratios</string>
+   </property>
+  </action>
+  <action name="actionSave_dat">
+   <property name="text">
+    <string>Save data</string>
+   </property>
+  </action>
+  <action name="actionOpen_Calibration">
+   <property name="text">
+    <string>Open Neoptix for Calibration</string>
+   </property>
+  </action>
+  <action name="actionOpen_Data_Measure">
+   <property name="text">
+    <string>Open Data for Measurement</string>
+   </property>
+  </action>
+  <action name="actionSave_Calibration">
+   <property name="text">
+    <string>Save Calibration</string>
+   </property>
+  </action>
+  <action name="action_simple_Plot">
+   <property name="text">
+    <string>Simple Plot</string>
+   </property>
+  </action>
+  <action name="action_ratios_plots">
+   <property name="text">
+    <string>Ratios Plots</string>
+   </property>
+  </action>
+  <action name="action_maxima_plots">
+   <property name="text">
+    <string>Maxima Plots</string>
+   </property>
+  </action>
+  <action name="actionMeasure_Interpolation_Plot">
+   <property name="text">
+    <string>Measure Interpolation Plot</string>
+   </property>
+  </action>
+  <action name="actionCalibration_Interpolation_Plot">
+   <property name="text">
+    <string>Calibration Interpolation Plot</string>
+   </property>
+  </action>
+  <action name="actionMeasurement_results_Plots">
+   <property name="text">
+    <string>Measurement results Plots</string>
+   </property>
+  </action>
+  <action name="actionCheck_Neoptix_Plot">
+   <property name="text">
+    <string>Check Neoptix Plot</string>
+   </property>
+  </action>
+  <action name="actionRatio">
+   <property name="text">
+    <string>Ratio</string>
+   </property>
+  </action>
+  <action name="actionMaxima">
+   <property name="text">
+    <string>Maxima</string>
+   </property>
+  </action>
+  <action name="actionHelp">
+   <property name="text">
+    <string>Help</string>
+   </property>
+  </action>
+  <action name="actionAbout">
+   <property name="text">
+    <string>About</string>
+   </property>
+  </action>
+  <action name="actionSelect_Calibration_File">
+   <property name="text">
+    <string>Select Calibration File</string>
+   </property>
+  </action>
+  <action name="actionCalibration_Preview">
+   <property name="text">
+    <string>Calibration Preview</string>
+   </property>
+  </action>
+ </widget>
+ <customwidgets>
+  <customwidget>
+   <class>MplWidget</class>
+   <extends>QWidget</extends>
+   <header>mplwidget.h</header>
+   <container>1</container>
+  </customwidget>
+ </customwidgets>
+ <resources/>
+ <connections/>
+</ui>
